@@ -4,8 +4,8 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Solution URL: [Project on GitHub](https://github.com/jdiabi/hudle-landing-page)
-- Live Site URL: https://jdiabi.github.io/hudle-landing-page/
+- Live Site URL: https://jdiabi.github.io/hundle-landing-page/
+- Solution URL: https://www.frontendmentor.io/solutions/hundle-landing-page
 
 
 ### Built with
