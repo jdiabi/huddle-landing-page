@@ -2,11 +2,6 @@
 
 This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### Screenshot
-
-![](./images/hudle-landing-page-desktop.png)
-![](./images/hudle-landing-page-mobile.png)
-
 ### Links
 
 - Solution URL: [Project on GitHub](https://github.com/jdiabi/hudle-landing-page)
