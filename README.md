@@ -13,12 +13,6 @@ This is a solution to the [Huddle landing page with single introductory section 
 - Flexbox
 - CSS Grid
 
-### Useful resources
-
-- [Font Awesome - Bordered & Pulled Icons](https://fontawesome.com/docs/web/style/pull) - This helped me set up a proper border for the social media's icons.
-- [Font Awesome - Customizing Icons](https://fontawesome.com/docs/web/style/custom) - This helped me using CSS custom properties targeting specifically the social media's icons
-- [Easings.net](https://easings.net/) - A cool website i often used to copy/paste easing functions. Works wonder with the CSS _transition_ property (specifically for the property _transition-timing-function_)
-
 ## Author
 
-- Frontend Mentor - [@joanFaseDev](https://www.frontendmentor.io/profile/jdiabi)
+- Frontend Mentor - [@jdiabi](https://www.frontendmentor.io/profile/jdiabi)
