@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  /* Typography */
+  --font-headings: "Poppins", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-size-default: 16px;
+  --font-weight-default: 400;
+  --font-weight-bold: 600;
+
+  /* Primary Colors */
+  --color-background: hsl(257, 40%, 49%);
+  --color-filter: hsl(300, 69%, 71%);
+  --color-box-shadow: hsl(256, 39%, 37%);
+
+  /* Neutral Color */
+  --color-font: hsl(0, 0%, 100%);
+
+  /* Transition */
+  --timing-duration: 0.3s;
+  --timing-function: cubic-bezier(0.5, 0, 0.75, 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--font-size-default);
+}
+
+body {
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-image: url(./images/bg-mobile.svg),
+    linear-gradient(var(--color-background), var(--color-background));
+  color: var(--color-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  width: 81%;
+}
+
+.huddle {
+  padding: 4em 0;
+}
+
+.huddle__logo {
+  display: block;
+  margin-bottom: 7.5em;
+}
+
+.huddle__illustration {
+  /* display: bloc; */
+  width: 100%;
+  height: auto;
+}
+
+.community {
+  padding: 3.5em 0 5.5em;
+}
+
+.community__title {
+  font-family: var(--font-headings);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.community__paragraph {
+  font-family: var(--font-body);
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 2.8rem;
+}
+
+.community__container-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9em;
+}
+
+.community__btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-background);
+  padding: 1em 6.5em;
+  border-radius: 2em;
+  background-color: var(--color-font);
+  font-size: 1.5rem;
+  font-family: var(--font-headings);
+  box-shadow: 0px 5px 10px 6px var(--color-box-shadow);
+  transition: color var(--timing-duration) var(--timing-function),
+    background-color var(--timing-duration) var(--timing-function);
+}
+
+.community__btn:hover {
+  color: var(--color-font);
+  background-color: var(--color-filter);
+}
+
+.community__social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.community__icons {
+  margin: 0.5rem;
+}
+
+.fa-stack {
+  transition: color var(--timing-duration) var(--timing-function);
+}
+
+.fa-stack:hover {
+  color: var(--color-filter);
+  cursor: pointer;
+}
+
+@media (min-width: 1300px) {
+  body {
+    background-image: url(./images/bg-desktop.svg),
+      linear-gradient(var(--color-background), var(--color-background));
+  }
+
+  .main {
+    width: 90%;
+    max-width: 1296px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr auto 1fr;
+  }
+
+  .huddle {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    padding: 3em 4em 4em 0;
+  }
+
+  .huddle__logo {
+    margin-bottom: 4.5em;
+    width: 30%;
+  }
+
+  .community {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    display: grid;
+    grid-template-rows: 10em repeat(4, minmax(10px, auto));
+    padding-bottom: 1.5em;
+  }
+
+  .community__title {
+    grid-row: 2 / 3;
+  }
+
+  .community__paragraph {
+    grid-row: 3 / 4;
+  }
+
+  .community__title {
+    font-size: 2.4rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .community__paragraph {
+    font-size: 1.125rem;
+    text-align: left;
+    padding-bottom: 1.9rem;
+  }
+
+  .community__container-btn {
+    grid-row: 4 / 5;
+    justify-content: flex-start;
+  }
+
+  .community__btn {
+    font-size: 1.1rem;
+    padding: 0.9em 3.7em;
+  }
+
+  .community__social-medias {
+    grid-row: 5 / 6;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .fa-stack {
+    font-size: 1.4em;
+    margin: 0.1em;
+  }
+}
